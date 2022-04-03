@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;700&display=swap');
 
 * { 
     padding:0;
@@ -12,7 +12,21 @@ body{
 
 .banner {
     background: #fc0303;
-    height: 100px;
+    height: 14vh;
     background: rgb(255,0,0);
     background: linear-gradient(90deg, rgba(255,0,0) 0%, rgba(0,0,0) 100%);
-    margin-bottom: 10px;
+
+}
+
+.title-block {
+    color: white;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+    font-size: 7vw;
+    text-align: center;
+    margin-top: auto;
+}
+
+.badge{
+    margin-top: -200px;
+}
