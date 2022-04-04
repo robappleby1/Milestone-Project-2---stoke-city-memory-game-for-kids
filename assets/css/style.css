@@ -18,15 +18,23 @@ body{
 
 }
 
+.badge{
+    height: 100%;
+    width:auto;
+    margin-top:-200px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
 .title-block {
     color: white;
     font-family: 'Prompt', sans-serif;
     font-weight: 700;
     font-size: 7vw;
     text-align: center;
-    margin-top: auto;
+   margin-top: 100px;
 }
 
-.badge{
-    margin-top: -200px;
+
 }
