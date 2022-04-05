@@ -1,10 +1,10 @@
 # Milestone Project 2 - Stoke City Memory Game for younger fans.
 
-<h2 align="center"><img src=""></h2>
+<h2 align="center"><img src="assets/images/stoke-city-fc-2.png"></h2>
 
 ## Purpose
 
-For this project I intend to design a memory game for younger Stoke City fans. This game will be constructed using knowledge gained so far on the HTML, CSS and javascript modules.
+For this project I intend to design a memory game for younger Stoke City fans. This game will be constructed using knowledge gained so far on the HTML, CSS and javascript modules. The goal of the game is for children to match all the cards of their favourite players. Feedback is given when every card is matched by the player.
 
 The live website can be found here. [link]()
 
@@ -43,7 +43,7 @@ This game is aimed at the younger generation of fans, aimed at the 8 - 10 yars o
 ## Colour Scheme
 
 The colours I intend to use for the site are Red (rgbn255,0,0) and black (rgb 0,0,0).
-This will fit in well with the club's existing team colours.
+This will fit in well with the club's existing team colours, and will immediately be recognised by the young fans playing the game.
 
 <br />
 
@@ -64,7 +64,7 @@ A sans-serif font which will easily fit into the clubs existing brand styling.
 
 # Structure
 
-The page will contain a fixed emblem at title block at the top of the page, which will easily identify what the page is all about. The title blockwilll consist of the clubs badge, which will be a link to the clubs website. On the left hand side will be a text block which will incorporate a small section on information about the club, and also the rules of the game, and how to play it. On the right hand side will be the game block itself.
+The page will contain a fixed emblem at title block at the top of the page, which will easily identify what the page is all about. The title block will consist of the clubs badge, which will be a link to the clubs website. On the left hand side will be a text block which will incorporate a small section on information about the club, and also the rules of the game, and how to play it. On the right hand side will be the game block itself.
 
 
 <br />
