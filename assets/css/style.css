@@ -70,8 +70,9 @@ margin-top: 30px;
 
 .game-grid img {
     width: calc(25% - 10px);
-    height:auto;
+    height: auto;
     margin: 5px;
+    border: 1px solid white;
     border-radius: 8px;
     filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
