@@ -23,15 +23,26 @@ clubCards.sort(() => 0.5 - Math.random());
 
 const gameDisplay = document.querySelector('.game-grid')
 
+const chosenCards = []
+
 
 function createBoard() {
     for (let i = 0; i < 16; i++) {
         const card = document.createElement("img")
         card.setAttribute('src', 'assets/images/card-back.png')
         card.setAttribute('data-id', i)
-        console.log(card, i)
-        gameDisplay.append(card)
+        card.addEventListener('click', flipCard)
+        gameDisplay.append(card);
     }
 
 }
 createBoard()
+
+function flipCard() {
+    console.log(clubCards)
+   const cardId = this.getAttribute('data-id')
+  
+   chosenCards.push(clubCards[cardId].name)
+   console.log('clicked', cardId)
+   console.log(chosenCards);
+}
