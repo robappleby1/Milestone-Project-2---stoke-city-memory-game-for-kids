@@ -15,14 +15,15 @@ body{
     background: #d7172f;
     background: #d7172f;
     background: linear-gradient(90deg, rgba(255,0,0) 0%, rgba(0,0,0) 100%);
-    height: 8vh;
+    height: 10vh;
 
 }
 
 .badge{
   margin:auto;
   display:block;
-  margin-top: -30px;
+  margin-top: -50px;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 
 }
 
@@ -33,6 +34,8 @@ body{
     font-size: 7vw;
     text-align: center;
    margin-top: 30px;
+   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+
 }
 
 .rules h2 {
@@ -56,21 +59,4 @@ margin-top: 30px;
 }
 
 
-.game-container {
-    display: grid;  
-    grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(4, 100px);
-}
-    
-.card {
-    background: white;
-    border: solid 2px white;
-    margin:5px;
-}
-
-.card-badge{
-    display: flex;
-   margin:auto;
-   
-}
    
