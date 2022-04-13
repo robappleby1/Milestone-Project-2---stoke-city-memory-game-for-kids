@@ -25,6 +25,8 @@ const gameDisplay = document.querySelector('.game-grid')
 
 const chosenCards = []
 
+const cardsSelectedIds = []
+
 
 function createBoard() {
     for (let i = 0; i < 16; i++) {
@@ -38,14 +40,26 @@ function createBoard() {
 }
 createBoard()
 
+function checkMatch() {
+   const cards = document.querySelectorAll('img')
+
+   console.log('check for match')
+   if (cardsChosen[0] == cardsChosen[1]) {
+    alert ('You found a match!')
+    }
+}
+
 function flipCard() {
    const cardId = this.getAttribute('data-id')
   
    chosenCards.push(clubCards[cardId].name)
-   console.log('clicked', cardId)
-   console.log(chosenCards);
+   cardsSelectedIds.push(cardId)
+    console.log('chosenCards')
+    console.log('cardsSelectedIds')
+
+
    this.setAttribute ('src', clubCards[cardId].img)
    if (chosenCards.length === 2) {
-       setTimeout(checkMatch, 500)
+       setTimeout( checkMatch, 500)
    }
 }
