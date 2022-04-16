@@ -20,16 +20,22 @@ const clubCards = [
     {name: "campbell", img: "assets/images/tyrese_campbell.jpeg"},
     
 ]
-    
+    function shuffleCards() {
         clubCards.sort(() => 0.5 - Math.random());
+    }
+        
 
 const gameDisplay = document.querySelector('.game-grid')
-const scoreDisplay = document.querySelector('#score-display')
+const scoreDisplay = document.getElementById('score-display')
+const attemptDisplay = document.getElementById('attempt-display')
+const playAgain = document.getElementById('replay')
+
 let cardsChosen = [];
 let cardsChosenId = [];
-let cardsWon = []
+let cardsWon = []   
 let attempt = 0;
-let cardsMatch = 0;
+
+
 
 
 
@@ -65,9 +71,21 @@ const secondCard = cardsChosenId[1]
     cardsChosenId = [] 
     attempt += 1;
     attemptDisplay.innerHTML = attempt;
-    scoreDisplay.textContent = cardsWon.length
 
     scoreDisplay.textContent = cardsWon.length
+
+
+    function replay() {
+            gameGrid.innerHTML = ""
+            shuffleCards()
+            createBoard()
+            cardsWon = 0;
+            attempt = 0;
+            attemptDisplay.innerHTML = 0;
+            matchDisplay.innerHTML = 0
+    }
+
+
     if  (cardsWon.length === clubCards.length/2) {
       scoreDisplay.textContent = 'Congratulations! You found them all!'
     }
@@ -81,7 +99,7 @@ cardsChosenId.push(cardId)
 
 this.setAttribute('src', clubCards[cardId].img)
 if (cardsChosen.length === 2) {
-setTimeout (checkForMatch, 500)
+setTimeout (checkForMatch, 750)
     }
 
    }
