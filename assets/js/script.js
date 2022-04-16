@@ -20,10 +20,11 @@ const clubCards = [
     {name: "campbell", img: "assets/images/tyrese_campbell.jpeg"},
     
 ]
-    function shuffleCards() {
+function shuffle () {
         clubCards.sort(() => 0.5 - Math.random());
-    }
-        
+}
+
+shuffle();
 
 const gameDisplay = document.querySelector('.game-grid')
 const scoreDisplay = document.getElementById('score-display')
@@ -75,7 +76,7 @@ const secondCard = cardsChosenId[1]
     scoreDisplay.textContent = cardsWon.length
 
 
-    function replay() {
+    function playAgain() {
             gameGrid.innerHTML = ""
             shuffleCards()
             createBoard()
@@ -84,6 +85,8 @@ const secondCard = cardsChosenId[1]
             attemptDisplay.innerHTML = 0;
             matchDisplay.innerHTML = 0
     }
+
+    playAgain()
 
 
     if  (cardsWon.length === clubCards.length/2) {
