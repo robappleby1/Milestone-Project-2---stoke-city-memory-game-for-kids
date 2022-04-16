@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', () => {
+
+
 const clubCards = [
     {name: "brown", img: "assets/images/brown.png"},
     {name: "vrancic", img: "assets/images/mario_vrancic.jpeg"},
@@ -18,48 +21,71 @@ const clubCards = [
     
 ]
     
-clubCards.sort(() => 0.5 - Math.random());
-
+        clubCards.sort(() => 0.5 - Math.random());
 
 const gameDisplay = document.querySelector('.game-grid')
+const scoreDisplay = document.querySelector('#score-display')
+let cardsChosen = [];
+let cardsChosenId = [];
+let cardsWon = []
+let attempt = 0;
+let cardsMatch = 0;
 
-const chosenCards = []
-
-const cardsSelectedIds = []
 
 
 function createBoard() {
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < clubCards.length; i++) {
         const card = document.createElement("img")
         card.setAttribute('src', 'assets/images/card-back.png')
         card.setAttribute('data-id', i)
         card.addEventListener('click', flipCard)
-        gameDisplay.append(card);
+        gameDisplay.appendChild(card);
     }
 
 }
-createBoard()
 
-function checkMatch() {
-   const cards = document.querySelectorAll('img')
 
-   console.log('check for match')
-   if (cardsChosen[0] == cardsChosen[1]) {
-    alert ('You found a match!')
+function checkForMatch() {
+const cards = document.querySelectorAll(".game-grid img");
+const firstCard = cardsChosenId[0]
+const secondCard = cardsChosenId[1]
+    
+   
+    if (cardsChosen[0] === cardsChosen[1]) {
+      cards[firstCard].setAttribute('src', 'assets/images/matched-card.png')
+      cards[secondCard].setAttribute('src', 'assets/images/matched-card.png')
+      cards[firstCard].removeEventListener('click', flipCard)
+      cards[secondCard].removeEventListener('click', flipCard)
+      cardsWon.push(cardsChosen)
+    } else {
+      cards[firstCard].setAttribute('src', 'assets/images/card-back.png')
+      cards[secondCard].setAttribute('src', 'assets/images/card-back.png')
     }
-}
+    cardsChosen = []
+    cardsChosenId = [] 
+    attempt += 1;
+    attemptDisplay.innerHTML = attempt;
+    scoreDisplay.textContent = cardsWon.length
+
+    scoreDisplay.textContent = cardsWon.length
+    if  (cardsWon.length === clubCards.length/2) {
+      scoreDisplay.textContent = 'Congratulations! You found them all!'
+    }
+  }
+
 
 function flipCard() {
-   const cardId = this.getAttribute('data-id')
-  
-   chosenCards.push(clubCards[cardId].name)
-   cardsSelectedIds.push(cardId)
-    console.log('chosenCards')
-    console.log('cardsSelectedIds')
+let cardId = this.getAttribute('data-id')
+cardsChosen.push(clubCards[cardId].name)
+cardsChosenId.push(cardId)
 
+this.setAttribute('src', clubCards[cardId].img)
+if (cardsChosen.length === 2) {
+setTimeout (checkForMatch, 500)
+    }
 
-   this.setAttribute ('src', clubCards[cardId].img)
-   if (chosenCards.length === 2) {
-       setTimeout( checkMatch, 500)
    }
-}
+
+createBoard()
+
+})
