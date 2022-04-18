@@ -29,7 +29,9 @@ shuffle();
 const gameDisplay = document.querySelector('.game-grid')
 const scoreDisplay = document.getElementById('score-display')
 const attemptDisplay = document.getElementById('attempt-display')
-const playAgain = document.getElementById('replay')
+const replayButton = document.getElementById('replay-button')
+
+
 
 let cardsChosen = [];
 let cardsChosenId = [];
@@ -75,23 +77,29 @@ const secondCard = cardsChosenId[1]
 
     scoreDisplay.textContent = cardsWon.length
 
-
-    function playAgain() {
-            gameGrid.innerHTML = ""
-            shuffleCards()
+    if  (cardsWon.length === clubCards.length/2) {
+      winOverlay.classlist.add('show');
+    }
+    function replayGame() {
+            gameDisplay.innerHTML = ""
+            shuffle()
             createBoard()
             cardsWon = 0;
             attempt = 0;
             attemptDisplay.innerHTML = 0;
-            matchDisplay.innerHTML = 0
+            scoreDisplay.innerHTML = 0
     }
 
-    playAgain()
-
-
-    if  (cardsWon.length === clubCards.length/2) {
-      scoreDisplay.textContent = 'Congratulations! You found them all!'
+    function restart () {
+      winOverlay.classlist.remove('show')
+      replayGame()
     }
+
+    replayButton.addEventListener('click', () => {
+      replayGame()
+    })
+
+
   }
 
 
@@ -102,11 +110,13 @@ cardsChosenId.push(cardId)
 
 this.setAttribute('src', clubCards[cardId].img)
 if (cardsChosen.length === 2) {
-setTimeout (checkForMatch, 750)
+setTimeout (checkForMatch, 500)
     }
 
    }
 
 createBoard()
+shuffle()
+winOverlayClose.addEventListener('click', restart)
 
 })

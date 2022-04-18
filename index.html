@@ -37,14 +37,17 @@
 
             <div class="rules col-lg-5">
                 <h2>Calling all young Potters!</h2>
-                <p>Enjoy this matching game and see if you can match all your favourite players from the club
+                <br>
+                <p>Enjoy this matching game and see if you can match all your favourite players from the club.
+                    <br>
                     If you can match a pair, the cards will turn green. When that happens just move on to guessing the next pair!
                     <br>
                     <h4><b>See if you can complete the game and match every pair in as few attempts as possible!</b></h4>
-                <br>
+                    <br>
+    
                 <p>
                     To keep up to date with all the latest news from your favourite club, including team news and fixtures and results, 
-                    please click on the following link <a "https://www.stokecityfc.com"></a>
+                    please click on the badge at the top of the page!
                 </p>
                     
             </p> 
@@ -63,9 +66,21 @@
 
                         <div class="counter">SCORE: <span class ="display" id ="score-display">0</span></div>
                         <div class="counter">ATTEMPT: <span class ="display" id ="attempt-display">0</span></div>
-                        <button type="button" class="btn btn-play" id = "replay">REPLAY</button>
+                        <button type="button" class="btn btn-play" id = "replay-button">REPLAY</button>
     </div>
 </section>
+
+<div id = 'win-game' class = 'win-overlay'>
+    <p>
+        <span class="win-message">Congratulations</span>
+        <br>
+        <span>You really know your Stoke City Players - well done!!</span>
+        <br>
+        <button type="button" class="btn btn-play" id = "replay-button">REPLAY</button>
+        <span img class = "crest" src = 'assets/images/stoke-city-fc-2.png' alt = "club-crest"></span>
+    </p>
+
+</div>
 
 <div class = "banner"></div>
     <script src="assets/js/script.js"></script>
