@@ -78,7 +78,7 @@ const secondCard = cardsChosenId[1]
     scoreDisplay.textContent = cardsWon.length
 
     if  (cardsWon.length === clubCards.length/2) {
-      winOverlay.classlist.add('show');
+      alert("You are a Stoke City Superfan!! Well Done!!");
     }
     function replayGame() {
             gameDisplay.innerHTML = ""
@@ -90,10 +90,10 @@ const secondCard = cardsChosenId[1]
             scoreDisplay.innerHTML = 0
     }
 
-    function restart () {
+    
       winOverlay.classlist.remove('show')
       replayGame()
-    }
+    
 
     replayButton.addEventListener('click', () => {
       replayGame()
@@ -118,5 +118,4 @@ setTimeout (checkForMatch, 500)
 createBoard()
 shuffle()
 winOverlayClose.addEventListener('click', restart)
-
 })

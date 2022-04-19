@@ -71,11 +71,11 @@ The page will contain a fixed emblem at title block at the top of the page, whic
 
 # Wireframes
 
-Desktop view [here](/assets/images/desktop.png)
+Desktop view [here](/assets/wireframes/desktop.png)
 
-Tablet view [here](/assets/images/tablet.png)
+Tablet view [here](/assets/wireframes/tablet.png)
 
-Mobile view [here](/assets/images/mobile.png)
+Mobile view [here](/assets/wireframes/mobile.png)
 
 
 <br />
