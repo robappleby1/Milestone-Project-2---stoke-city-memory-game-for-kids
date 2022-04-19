@@ -60,7 +60,7 @@ const firstCard = cardsChosenId[0]
 const secondCard = cardsChosenId[1]
     
    
-    if (cardsChosen[0] === cardsChosen[1]) {
+    if (cardsChosen[0] === cardsChosen[1] && firstCard !== secondCard) {
       cards[firstCard].setAttribute('src', 'assets/images/matched-card.png')
       cards[secondCard].setAttribute('src', 'assets/images/matched-card.png')
       cards[firstCard].removeEventListener('click', flipCard)
@@ -90,10 +90,7 @@ const secondCard = cardsChosenId[1]
             scoreDisplay.innerHTML = 0
     }
 
-    
-      winOverlay.classlist.remove('show')
-      replayGame()
-    
+  
 
     replayButton.addEventListener('click', () => {
       replayGame()
