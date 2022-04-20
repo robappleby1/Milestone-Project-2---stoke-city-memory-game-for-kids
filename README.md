@@ -6,7 +6,7 @@
 
 For this project I intend to design a memory game for younger Stoke City fans. This game will be constructed using knowledge gained so far on the HTML, CSS and javascript modules. The goal of the game is for children to match all the cards of their favourite players. Feedback is given when every card is matched by the player.
 
-The live website can be found here. [link]()
+The live website can be found here. [link](https://robappleby1.github.io/Milestone-Project-2---stoke-city-memory-game-for-kids)
 
 <br />
 
