@@ -121,3 +121,29 @@ p {
     background-color: white;
     color: #d7172f;
 }
+
+.success-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.success-overlay.show {
+    display:flex;
+}
+
+.congratulations {
+    font-size: 40px;
+    color: #d7172f;
+}
+
+.club-crest {
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+}

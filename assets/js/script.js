@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const gameDisplay = document.querySelector('.game-grid')
   const scoreDisplay = document.getElementById('score-display')
   const attemptDisplay = document.getElementById('attempt-display')
+  const playAgain = document.getElementById ('replay')
   const replayButton = document.getElementById('replay-button')
+  const successOverlay = document.getElementById('success')
+  const successOverlayClose = document.getElementById ('replayGame')
 
   let cardsChosen = [];
   let cardsChosenId = [];
@@ -98,6 +101,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
+  //function to flip cards and swap club crest with images in card array.
+  function flipCard() {
+    let cardId = this.getAttribute('data-id')
+    cardsChosen.push(clubCards[cardId].name)
+    cardsChosenId.push(cardId)
+
+    this.setAttribute('src', clubCards[cardId].img)
+    if (cardsChosen.length === 2) {
+      setTimeout(checkForMatch, 750)
+    }
+
+  }
+
   //function to check for a match after selecting two cards.
   function checkForMatch() {
     const cards = document.querySelectorAll(".game-grid img");
@@ -122,13 +138,13 @@ document.addEventListener('DOMContentLoaded', () => {
     scoreDisplay.textContent = cardsWon.length
 
     //alert to signify the completion of the game after matching all cards.
-    if (cardsWon.length === clubCards.length / 2) {
-      alert("You are a Stoke City Superfan!! Well Done!!");
+    if (cardsWon.length === clubCards.length /2) {
+      successOverlay.classlist.add('show')
     }
   }
 
   //function to replay the game and reset counters to zero.
-  function replayGame() {
+  function replay() {
     gameDisplay.innerHTML = ""
     shuffle()
     createBoard()
@@ -142,19 +158,16 @@ document.addEventListener('DOMContentLoaded', () => {
     replayGame()
   })
 
-  //function to flip cards and swap club crest with images in card array.
-  function flipCard() {
-    let cardId = this.getAttribute('data-id')
-    cardsChosen.push(clubCards[cardId].name)
-    cardsChosenId.push(cardId)
-
-    this.setAttribute('src', clubCards[cardId].img)
-    if (cardsChosen.length === 2) {
-      setTimeout(checkForMatch, 750)
-    }
-
+  function replayGame() {
+    successOverlay.classList.remove('show');
+    replay()
   }
 
   createBoard()
   shuffle()
-})
+  playAgain.addEventListener("click", replay)
+  successOverlayClose.addEventListener ('click', replayGame)
+  
+
+});
+
