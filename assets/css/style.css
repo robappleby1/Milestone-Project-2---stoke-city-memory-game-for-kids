@@ -67,6 +67,9 @@ p {
 .rules {
     border: 4px solid white;
     border-radius: 20px;
+    padding: 10px 25px 10px 25px;
+    height:auto;
+    position: relative;
 
 }
 

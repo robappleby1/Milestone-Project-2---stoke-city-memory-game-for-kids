@@ -1,6 +1,6 @@
 # Milestone Project 2 - Stoke City Memory Game for younger fans.
 
-<h2 align="center"><img src="assets/images/stoke-city-fc-2.png"></h2>
+<h2 align="center"><img src="assets/images/stoke_city_fc_2.png"></h2>
 
 ## Purpose
 
@@ -40,6 +40,14 @@ This game is aimed at the younger generation of fans, aimed at the 8 - 10 yars o
 
 # Design
 
+## Structure
+
+The page will contain a fixed emblem at title block at the top of the page, which will easily identify what the page is all about. The title block will consist of the clubs badge, which will be a link to the clubs website. On the left hand side will be a text block which will incorporate a small section on information about the club, and also the rules of the game, and how to play it. On the right hand side will be the game block itself.
+
+## Initial design Experience
+
+The page has been designed with ease of use for the player in mind. Upon loading the players eye will immediately be drawn to the game grid due to the club crest being on the back of every card. The eye will then be drawn to the rules section which is immediately next to the game grid. The cards have an animation when you click on them, shrinking upon interaction before showing the player on the other side of the card.
+
 ## Colour Scheme
 
 The colours I intend to use for the site are Red (rgbn255,0,0) and black (rgb 0,0,0).
@@ -47,8 +55,7 @@ This will fit in well with the club's existing team colours, and will immediatel
 
 <br />
 
-<h2 align="center"><img src="assets/images/stoke-colours.jpg"></h2>
-
+<h2 align="center"><img src="assets/images/stoke_colours.jpg"></h2>
 
 <br />
 
@@ -59,15 +66,32 @@ The logo will be made up of a title block which incorporates the clubs badge. Th
 - Prompt (Including all font weights)
 A sans-serif font which will easily fit into the clubs existing brand styling.
 
+# Images
+
+The imagery used in this project is determined by images that would be recognised immediately by any young fan. This is the reson that the club crest has been used on the back of the cards, and also why the matching card images are current players, which will immediately be recognised by the player of the game.
+
+<br>
 
 <br />
 
-# Structure
+## Responsiveness Design
 
-The page will contain a fixed emblem at title block at the top of the page, which will easily identify what the page is all about. The title block will consist of the clubs badge, which will be a link to the clubs website. On the left hand side will be a text block which will incorporate a small section on information about the club, and also the rules of the game, and how to play it. On the right hand side will be the game block itself.
+- The game is designed to be fun for a young Stoke fan.
+- The game keeps score of matches and attempts by the player.
+- Text layout adjusts depending on screen size.
+Responsiveness design of the page ensures that the game is easily played whatever the screen size, due to the reorder of columns, based on whatever device the game is being played on.
 
+<br>
 
-<br />
+## Future Features
+
+In the future, I would hope to add:
+
+- Further images of different players, so the game would have a library of pictures, so different players for every game.
+- An option to add and pick further difficulty levels.
+
+<br>
+
 
 # Wireframes
 
@@ -125,7 +149,7 @@ Type git clone, and then paste the URL you copied.
 3. Click on "Pages" will open "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Main Branch".
 5. The page will automatically refresh.
-6. At the top near github header to locate the now published site [link](https://robappleby1.github.io/user-centric-milestone-project/)
+6. At the top near github header to locate the now published site [link](https://robappleby1.github.io/Milestone-Project-2---stoke-city-memory-game-for-kids)
 
 <br />
 
@@ -139,20 +163,37 @@ errors in the code.
 - [Lighthouse report]()
 
 ## Testing User Stories from UX Section
+<br>
 
--
+- ## <b>First time visitor goals</b>
+
+- As a first time user I need to easily navigate through the game and be able to easily understand the rules.
+  Upon entering the site, the player will be greeted by a set of rules and an eye catching game grid.
+ - As a first time user I need to be able to view the website clearly on both tablet and mobile, as well as desktop.
+ The game has been designed to be responsive on any device, with the columns re-arranging based on screen size,
+ ensuring the game is easy to play.
+ - As a first time user I need to be able to easily play the game, through responsive design.
+The game is easy to play on any screen size, due to the responsive design ensuring all cards are on screen at the same time.
+ - As a first time user I need to be able to find out further information about the club via a link to their website. At the very top of the page is a large club crest, which not only catches the eye, but is also a link when clicked which takes the player to the club website, where there is further information on the club plus the ability to buy tickets etc.
+
+ ## <b>Returning Visitor Goals</b>
+
+ - As a returning visitor I want to be able to easily find a way to play the game again. At the bottom of the game grid will be a reset button and also a replay button on the completion of the game.
+
 
 <br />
 
-- 
 
 # Errors and Bugs
 
-- 
+- I initially had a problem with the cards turning back too quickly, so there was not a sufficient time for the player to view both cards, and recognise that they dont match. This was rectified by an adjustment in the Javascript code. 
+- My daughter played the game and reported that the card shuffle at the start of each game was not working properly, as she knew where each card would be. I amended the code slightly - bracket in the wrong place - and this rectified the issue.
 
 # Further Testing
 
-- 
+- The game was tested on Google Chrome, Firefox and Safari browsers.
+- Testing was carried out to ensure all links were working correctly.
+- Friends were asked to play the game and report any bugs or issues.
 
 <br />
 
