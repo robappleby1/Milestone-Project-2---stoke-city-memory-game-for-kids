@@ -123,9 +123,9 @@ p {
 }
 
 .success-overlay {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(255, 255, 255, 0.8);
     color: white;
-    display: none;
+    display:none;
     position: fixed;
     top: 0;
     left: 0;
@@ -142,12 +142,24 @@ p {
 }
 
 .congratulations {
-    font-size: 40px;
+    font-family: 'Prompt', sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+    text-align: center;
     color: #d7172f;
 }
 
 .club-crest {
-    width: 200px;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
+    display: block;
+    margin-top: 150px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.8));
 }
+
+.superfan {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5vw;
+    color: #d7172f;
+    
+    
+    }
