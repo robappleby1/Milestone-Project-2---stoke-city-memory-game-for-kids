@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const playAgain = document.getElementById ('replay')
   const replayButton = document.getElementById('replay-button')
   const successOverlay = document.getElementById('success')
-  const successOverlayClose = document.getElementById ('replayGame')
+  const successOverlayClose = document.getElementById ('replay')
 
   let cardsChosen = [];
   let cardsChosenId = [];
@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
       cards[firstCard].removeEventListener('click', flipCard)
       cards[secondCard].removeEventListener('click', flipCard)
       cardsWon.push(cardsChosen)
+      setTimeout(success, 500);
     } else {
       cards[firstCard].setAttribute('src', 'assets/images/card_back.png')
       cards[secondCard].setAttribute('src', 'assets/images/card_back.png')
@@ -134,14 +135,19 @@ document.addEventListener('DOMContentLoaded', () => {
     cardsChosenId = []
     attempt += 1;
     attemptDisplay.innerHTML = attempt;
+    
 
     scoreDisplay.textContent = cardsWon.length
 
     //alert to signify the completion of the game after matching all cards.
-    if (cardsWon.length === clubCards.length /2) {
-      successOverlay.classlist.add('show')
+     function success () {
+      if (cardsWon.length == clubCards.length/2) {
+        successOverlay.classList.add('show');
+       }
+    
     }
-  }
+    }
+
 
   //function to replay the game and reset counters to zero.
   function replay() {
