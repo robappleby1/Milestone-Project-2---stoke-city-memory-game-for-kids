@@ -122,6 +122,8 @@ p {
     color: #d7172f;
 }
 
+/*overlay styling*/
+
 .success-overlay {
     background-color: rgba(255, 255, 255, 0.8);
     color: white;
@@ -163,3 +165,16 @@ p {
     
     
     }
+
+/*media query for game grid on mobile devices*/
+
+@media screen and (max-width:480px) {
+    .game-grid img {
+        width: calc(33% - 10px);
+        height: auto;
+        margin: 5px;
+        border: 1px solid white;
+        border-radius: 8px;
+        filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+}
