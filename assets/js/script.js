@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   //Variables using const  for the values that will not change.
-  const gameDisplay = document.querySelector('.game-grid')
-  const scoreDisplay = document.getElementById('score-display')
-  const attemptDisplay = document.getElementById('attempt-display')
-  const playAgain = document.getElementById ('replay')
-  const replayButton = document.getElementById('replay-button')
-  const successOverlay = document.getElementById('success')
-  const successOverlayClose = document.getElementById ('replay')
+  const gameDisplay = document.querySelector('.game-grid');
+  const scoreDisplay = document.getElementById('score-display');
+  const attemptDisplay = document.getElementById('attempt-display');
+  const playAgain = document.getElementById ('replay');
+  const replayButton = document.getElementById('replay-button');
+  const successOverlay = document.getElementById('success');
+  const successOverlayClose = document.getElementById ('replay');
 
   let cardsChosen = [];
   let cardsChosenId = [];
-  let cardsWon = []
+  let cardsWon = [];
   let attempt = 0;
 
   //Array of images for the cards.
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
       img: "assets/images/tyrese_campbell.jpeg"
     },
 
-  ]
+  ];
 
   //Shuffle function to randomise the order of the cards.
   function shuffle() {
@@ -92,10 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
       //function to create the game, to loop through the array of cards and add event listeners.
       function createBoard() {
       for (let i = 0; i < clubCards.length; i++) {
-      const card = document.createElement("img")
-      card.setAttribute('src', 'assets/images/card_back.png')
-      card.setAttribute('data-id', i)
-      card.addEventListener('click', flipCard)
+      const card = document.createElement("img");
+      card.setAttribute('src', 'assets/images/card_back.png');
+      card.setAttribute('data-id', i);
+      card.addEventListener('click', flipCard);
       gameDisplay.appendChild(card);
     }
 
@@ -103,13 +103,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //function to flip cards and swap club crest with images in card array.
   function flipCard() {
-    let cardId = this.getAttribute('data-id')
-    cardsChosen.push(clubCards[cardId].name)
-    cardsChosenId.push(cardId)
+    let cardId = this.getAttribute('data-id');
+    cardsChosen.push(clubCards[cardId].name);
+    cardsChosenId.push(cardId);
 
-    this.setAttribute('src', clubCards[cardId].img)
+    this.setAttribute('src', clubCards[cardId].img);
     if (cardsChosen.length === 2) {
-      setTimeout(checkForMatch, 750)
+      setTimeout(checkForMatch, 750);
     }
 
   }
@@ -117,27 +117,27 @@ document.addEventListener('DOMContentLoaded', () => {
   //function to check for a match after selecting two cards.
   function checkForMatch() {
     const cards = document.querySelectorAll(".game-grid img");
-    const firstCard = cardsChosenId[0]
-    const secondCard = cardsChosenId[1]
+    const firstCard = cardsChosenId[0];
+    const secondCard = cardsChosenId[1];
 
     if (cardsChosen[0] === cardsChosen[1] && firstCard !== secondCard) {
-      cards[firstCard].setAttribute('src', 'assets/images/matched_card.png')
-      cards[secondCard].setAttribute('src', 'assets/images/matched_card.png')
-      cards[firstCard].removeEventListener('click', flipCard)
-      cards[secondCard].removeEventListener('click', flipCard)
-      cardsWon.push(cardsChosen)
+      cards[firstCard].setAttribute('src', 'assets/images/matched_card.png');
+      cards[secondCard].setAttribute('src', 'assets/images/matched_card.png');
+      cards[firstCard].removeEventListener('click', flipCard);
+      cards[secondCard].removeEventListener('click', flipCard);
+      cardsWon.push(cardsChosen);
       setTimeout(success, 500);
     } else {
-      cards[firstCard].setAttribute('src', 'assets/images/card_back.png')
-      cards[secondCard].setAttribute('src', 'assets/images/card_back.png')
+      cards[firstCard].setAttribute('src', 'assets/images/card_back.png');
+      cards[secondCard].setAttribute('src', 'assets/images/card_back.png');
     }
-    cardsChosen = []
-    cardsChosenId = []
+    cardsChosen = [];
+    cardsChosenId = [];
     attempt += 1;
     attemptDisplay.innerHTML = attempt;
     
 
-    scoreDisplay.textContent = cardsWon.length
+    scoreDisplay.textContent = cardsWon.length;
 
     //alert to signify the completion of the game after matching all cards.
      function success () {
@@ -151,28 +151,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //function to replay the game and reset counters to zero.
   function replay() {
-    gameDisplay.innerHTML = ""
-    shuffle()
-    createBoard()
+    gameDisplay.innerHTML = "";
+    shuffle();
+    createBoard();
     cardsWon = 0;
     attempt = 0;
     attemptDisplay.innerHTML = 0;
-    scoreDisplay.innerHTML = 0
+    scoreDisplay.innerHTML = 0;
   }
 
     replayButton.addEventListener('click', () => {
-    replayGame()
-  })
+    replayGame();
+  });
 
   function replayGame() {
     successOverlay.classList.remove('show');
-    replay()
+    replay();
   }
 
-  createBoard()
-  shuffle()
-  playAgain.addEventListener("click", replay)
-  successOverlayClose.addEventListener ('click', replayGame)
+  createBoard();
+  shuffle();
+  playAgain.addEventListener("click", replay);
+  successOverlayClose.addEventListener ('click', replayGame);
   
 
 });

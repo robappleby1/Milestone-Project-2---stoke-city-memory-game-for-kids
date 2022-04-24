@@ -5,25 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Stoke City FC Memory Game" content="Matching game for younger fans"
+    <meta name="Stoke City FC Memory Game" content="Matching game for younger fans">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-
     <title>Stoke City FC - Memory Game</title>
 </head>
 
 <body>
 
-   
     <div class="banner"></div>
 
-
-    
-     <!--badge header -->
+    <!--badge header -->
     <div class='header'>
         <div class="badge">
             <a id="badge" href="https://www.stokecityfc.com/" target="_blank">
@@ -40,8 +36,7 @@
     <!-- game rules -->
     <section>
         <div class='container'>
-            <div class='row'>
-
+            <div class="row">
                 <div class="rules col-lg-5">
                     <h2>Calling all young Potters!</h2>
                     <br>
@@ -60,19 +55,22 @@
                             please click on the badge at the top of the page!
                         </p>
                         <br>
-                        <p>Stoke City Football Club is an English professional football club based in Stoke-on-Trent, Staffordshire. 
-                        Founded as Stoke Ramblers in 1863, it changed its name to Stoke Football Club in 1878 and then to Stoke City in 1925 after Stoke-on-Trent was granted city status. It was one of the twelve founding members of the Football League in 1888. It competes in the Championship, the second tier of English football.</p>
-
-                    </p>
-
+                        <div class="hidden-text d-none d-lg-block">
+                            <p>Stoke City Football Club is an English professional football club based in
+                                Stoke-on-Trent, Staffordshire.
+                                Founded as Stoke Ramblers in 1863, it changed its name to Stoke Football Club in 1878
+                                and then to Stoke City in 1925 after Stoke-on-Trent was granted city status. It was one
+                                of the twelve founding members of the Football League in 1888. It competes in the
+                                Championship, the second tier of English football.</p>
+                        </div>
                 </div>
-                <!-- /.game rules -->
 
+                <!-- /.game rules -->
 
                 <!-- game grid -->
                 <div class="col-lg-7">
                     <div class="game-grid">
-                        <div>
+                </div>
 
                         </div>
                     </div>
@@ -82,24 +80,20 @@
                     <div class="counter">SCORE: <span class="display" id="score-display">0</span></div>
                     <div class="counter">ATTEMPT: <span class="display" id="attempt-display">0</span></div>
                     <button type="button" class="btn btn-play" id="replay-button">RESET</button>
-                    <!-- /.counters and replay button -->
                 </div>
     </section>
+    <div id="success" class="success-overlay">
+        <p>
+            <span><img class='club-crest' src='assets/images/stoke_city_fc_2.png' alt=stoke-city-badge></span>
+            <span class='congratulations'>Congratulations!!</span>
+            <br>
+            <span class="superfan">You are definitely a Potters superfan!!</span>
+            <br>
+            <br>
+            <button class='btn btn-play' id='replay'>replay</button>
+            <br>
 
-    </div>
-
-    <div id = "success" class = "success-overlay">
-            <p>
-                <span><img class = 'club-crest' src = 'assets/images/stoke_city_fc_2.png' alt = stoke city badge></span>
-                <span class = 'congratulations'>Congratulations!!</span>
-                <br>
-                <span class = "superfan">You are definitely a Potters superfan!!</span>
-                <br>
-                <br>
-                <button class = 'btn btn-play' id = 'replay'>replay</button>
-                <br>
-            
-            </p>
+        </p>
     </div>
 
     <div class="banner"></div>
