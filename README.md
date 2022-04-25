@@ -158,9 +158,9 @@ Type git clone, and then paste the URL you copied.
 The Lighthouse, W3C Markup Validator and the Lighthose report were used to determine whether there were any
 errors in the code.
 
-- [W3C Markup Validator]()
-- [W3C CSS Validator]()
-- [Lighthouse report]()
+- [W3C Markup Validator](assets/validators/HTML_validation.png)
+- [W3C CSS Validator](assets/validators/CSS_validation.png)
+- [Lighthouse report](assets/validators/lighthouse%20report.png)
 
 ## Testing User Stories from UX Section
 <br>

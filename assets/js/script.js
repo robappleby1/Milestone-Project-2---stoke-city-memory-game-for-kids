@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
       for (let i = 0; i < clubCards.length; i++) {
       const card = document.createElement("img");
       card.setAttribute('src', 'assets/images/card_back.png');
+      card.setAttribute('alt', 'player-images');
       card.setAttribute('data-id', i);
       card.addEventListener('click', flipCard);
       gameDisplay.appendChild(card);
