@@ -165,7 +165,7 @@ errors in the code.
 ## Testing User Stories from UX Section
 <br>
 
-- ## <b>First time visitor goals</b>
+## First time visitor goals
 
 - As a first time user I need to easily navigate through the game and be able to easily understand the rules.
   Upon entering the site, the player will be greeted by a set of rules and an eye catching game grid.
@@ -176,7 +176,7 @@ errors in the code.
 The game is easy to play on any screen size, due to the responsive design ensuring all cards are on screen at the same time.
  - As a first time user I need to be able to find out further information about the club via a link to their website. At the very top of the page is a large club crest, which not only catches the eye, but is also a link when clicked which takes the player to the club website, where there is further information on the club plus the ability to buy tickets etc.
 
- ## <b>Returning Visitor Goals</b>
+ ## Returning Visitor Goals
 
  - As a returning visitor I want to be able to easily find a way to play the game again. At the bottom of the game grid will be a reset button and also a replay button on the completion of the game.
 
@@ -188,6 +188,7 @@ The game is easy to play on any screen size, due to the responsive design ensuri
 
 - I initially had a problem with the cards turning back too quickly, so there was not a sufficient time for the player to view both cards, and recognise that they dont match. This was rectified by an adjustment in the Javascript code. 
 - My daughter played the game and reported that the card shuffle at the start of each game was not working properly, as she knew where each card would be. I amended the code slightly - bracket in the wrong place - and this rectified the issue.
+- There is a bug in the game currently, where if you click on the cards too quickly, it breaks the game and the cards do not match anymore. In the future this will be something that I would need to look at and rectify.
 
 # Further Testing
 
@@ -198,20 +199,26 @@ The game is easy to play on any screen size, due to the responsive design ensuri
 <br />
 
 # Credits
+
+## Code 
+<br>
+I was helped with this project by watching various javascript tutorials, which enabled me to build the various functions needed for this game. These were:
+
+- Learn JavaScript by Building 7 Games - Full Course [link](https://www.youtube.com/watch?v=ec8vSKJuZTk&t=5449s)
+- How To Code A Card Game In Plain JavaScript - Spooky Halloween Edition [link](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=309s)
+
+## Media
+<br>
+
 ## The following images were used in the project:
-<br />
-
-- 
-
-
 
 <br />
 
-# Credits
 
-- 
 
-<br />
+- The player images that were used for the cards were all taken from the photos section of the clubs facebook page [link] (https://www.facebook.com/stokecity/photos/?ref=page_internal)
+- The image of the back of the cards was taken from [link] (http://sportplaylists.com/get-ready-201718-stoke-city-fc-official-playlist)
+
 
 # Acknowledgements
 
