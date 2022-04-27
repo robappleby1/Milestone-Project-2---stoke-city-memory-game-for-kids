@@ -1,0 +1,22 @@
+{
+  "name": "milestone-project-2---stoke-city-memory-game-for-kids",
+  "version": "1.0.0",
+  "description": "<h2 align=\"center\"><img src=\"assets/images/stoke_city_fc_2.png\"></h2>",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robappleby1/Milestone-Project-2---stoke-city-memory-game-for-kids.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robappleby1/Milestone-Project-2---stoke-city-memory-game-for-kids/issues"
+  },
+  "homepage": "https://github.com/robappleby1/Milestone-Project-2---stoke-city-memory-game-for-kids#readme",
+  "dependencies": {
+    "jest": "^28.0.1"
+  }
+}
