@@ -6,7 +6,7 @@
 <h2 align="center"><img src="assets/images/screenshot_responsive.png"></h2>
 
 
-## Purpose
+# Purpose
 
 For this project I intend to design a memory game for younger Stoke City fans. This game will be constructed using knowledge gained so far on the HTML, CSS and javascript modules. The goal of the game is for children to match all the cards of their favourite players. Feedback is given when every card is matched by the player.
 
@@ -177,7 +177,7 @@ errors in the code.
  The game has been designed to be responsive on any device, with the columns re-arranging based on screen size,
  ensuring the game is easy to play.
  - As a first time user I need to be able to easily play the game, through responsive design.
-The game is easy to play on any screen size, due to the responsive design ensuring all cards are on screen at the same time.
+The game is easy to play on any screen size due to the responsive design. On mobile devices the cards are in a 3 x 6 configuration to ensure that they are large enough to be responsive.
  - As a first time user I need to be able to find out further information about the club via a link to their website. At the very top of the page is a large club crest, which not only catches the eye, but is also a link when clicked which takes the player to the club website, where there is further information on the club plus the ability to buy tickets etc.
 
  ## Returning Visitor Goals
