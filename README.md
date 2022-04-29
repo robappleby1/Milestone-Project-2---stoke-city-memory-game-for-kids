@@ -1,6 +1,10 @@
 # Milestone Project 2 - Stoke City Memory Game for younger fans.
 
+
 <h2 align="center"><img src="assets/images/stoke_city_fc_2.png"></h2>
+
+<h2 align="center"><img src="assets/images/screenshot_responsive.png"></h2>
+
 
 ## Purpose
 
