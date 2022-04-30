@@ -10,7 +10,7 @@
     document.close();
 })
 
-const shuffle = require('../assets/js/script.js');
+const shuffle = require('./script.js');
 
 //check existence of shuffle function
 test('shuffle function exists', () => {
