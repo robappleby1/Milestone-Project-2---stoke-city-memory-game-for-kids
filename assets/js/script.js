@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function shuffle() {
     clubCards.sort(() => 0.5 - Math.random());
   }
-
+  
   shuffle();
 
       //function to create the game, to loop through the array of cards and add event listeners.
@@ -177,3 +177,5 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
 });
+
+module.exports = ('shuffle');
