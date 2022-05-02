@@ -219,6 +219,7 @@ I was helped with this project by watching various javascript tutorials, which e
 - Awesome Vanilla JavaScript Memory Card Game Tutorial [Link](https://www.youtube.com/watch?v=-tlb4tv4mC4)
 - Memory Card Game - JavaScript Tutorial [Link](https://www.youtube.com/watch?v=ZniVgo8U7ek)
 - Overlay creation [Link](https://www.w3schools.com/howto/howto_css_overlay.asp)
+- Help with JEST testing [Link](https://stackoverflow.com/questions/66349868/jest-unit-testing-module-export-error-in-browser-console)
 
 ## Media
 
