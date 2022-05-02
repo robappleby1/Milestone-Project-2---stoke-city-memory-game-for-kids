@@ -178,4 +178,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-module.exports = ('shuffle');
+var module = module || {};
+module.exports = 'shuffle';

@@ -27,3 +27,4 @@ test('shuffle function works and shuffles array', () => {
         jest.spyOn(global.math, 'random').mockRestore();
     })
 })
+

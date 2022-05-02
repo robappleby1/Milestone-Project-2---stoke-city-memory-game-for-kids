@@ -21,9 +21,6 @@ The memory game will be aimed at younger Stoke City fans, who will have to match
 
 This game is aimed at the younger generation of fans, aimed at the 8 - 10 yars old age bracket. This idea is inspired by my daughter who has just started attending matches, and wants to learn more about the club and the players. 
 
-
-
-
 <br />
 
 # User Experience Design
@@ -63,20 +60,20 @@ This will fit in well with the club's existing team colours, and will immediatel
 
 <br />
 
-# Typography
+The red colour was at a later stage amended to #d7172f which is slightly more in tune with the clubs current brand identity.
+
+<br />
+
+## Typography
 
 The logo will be made up of a title block which incorporates the clubs badge. The badge will be a link to their existing website.
 
 - Prompt (Including all font weights)
 A sans-serif font which will easily fit into the clubs existing brand styling.
 
-# Images
+## Images
 
-The imagery used in this project is determined by images that would be recognised immediately by any young fan. This is the reson that the club crest has been used on the back of the cards, and also why the matching card images are current players, which will immediately be recognised by the player of the game.
-
-<br>
-
-<br />
+The imagery used in this project is determined by images that would be recognised immediately by any young fan. This is the reason that the club crest has been used on the back of the cards, and also why the matching card images are current players, which will immediately be recognised by the player of the game.
 
 ## Responsiveness Design
 
@@ -84,8 +81,6 @@ The imagery used in this project is determined by images that would be recognise
 - The game keeps score of matches and attempts by the player.
 - Text layout adjusts depending on screen size.
 Responsiveness design of the page ensures that the game is easily played whatever the screen size, due to the reorder of columns, based on whatever device the game is being played on.
-
-<br>
 
 ## Future Features
 
@@ -167,23 +162,30 @@ errors in the code.
 - [Lighthouse report](assets/validators/lighthouse_report.png)
 - [JS Hint](assets/validators/Javascript_validation.png)
 
-## Testing User Stories from UX Section
 <br>
 
-## First time visitor goals
+## Testing User Stories from UX Section
+
+  - ## First time visitor goals
 
 - As a first time user I need to easily navigate through the game and be able to easily understand the rules.
-  Upon entering the site, the player will be greeted by a set of rules and an eye catching game grid.
+    - Upon entering the site, the player will be greeted by a set of rules and an eye catching game grid.
  - As a first time user I need to be able to view the website clearly on both tablet and mobile, as well as desktop.
- The game has been designed to be responsive on any device, with the columns re-arranging based on screen size,
- ensuring the game is easy to play.
+    - The game has been designed to be responsive on any device, with the columns re-arranging based on screen size,
+    ensuring the game is easy to play.
  - As a first time user I need to be able to easily play the game, through responsive design.
-The game is easy to play on any screen size due to the responsive design. On mobile devices the cards are in a 3 x 6 configuration to ensure that they are large enough to be responsive.
- - As a first time user I need to be able to find out further information about the club via a link to their website. At the very top of the page is a large club crest, which not only catches the eye, but is also a link when clicked which takes the player to the club website, where there is further information on the club plus the ability to buy tickets etc.
+    - The game is easy to play on any screen size due to the responsive design. On mobile devices the cards are in a 
+      3 x 6 configuration to ensure that they are large enough to be responsive.
+ - As a first time user I need to be able to find out further information about the club via a link to their website.  
+    - At the very top of the page is a large club crest, which not only catches the eye, but is also a link when       
+      clicked which takes the player to the club website, where there is further information on the club plus the ability to buy tickets etc.
 
- ## Returning Visitor Goals
+<br>
 
- - As a returning visitor I want to be able to easily find a way to play the game again. At the bottom of the game grid will be a reset button and also a replay button on the completion of the game.
+  - ## Returning Visitor Goals
+
+ - As a returning visitor I want to be able to easily find a way to play the game again.
+    - At the bottom of the game grid will be a reset button and also a replay button on the completion of the game.
 
 
 <br />
@@ -193,7 +195,11 @@ The game is easy to play on any screen size due to the responsive design. On mob
 
 - I initially had a problem with the cards turning back too quickly, so there was not a sufficient time for the player to view both cards, and recognise that they dont match. This was rectified by an adjustment in the Javascript code. 
 - My daughter played the game and reported that the card shuffle at the start of each game was not working properly, as she knew where each card would be. I amended the code slightly - bracket in the wrong place - and this rectified the issue.
+ - I had an issue with the module.exports line in the javascript code, which was causing an error in the console. 
+ I found an answer on [stackoverflow.com](https://stackoverflow.com/questions/66349868/jest-unit-testing-module-export-error-in-browser-console) which recified the issue.
 - There is a bug in the game currently, where if you click on the cards too quickly, it breaks the game and the cards do not match anymore. In the future this will be something that I would need to look at and rectify.
+
+<br>
 
 # Further Testing
 
@@ -206,24 +212,28 @@ The game is easy to play on any screen size due to the responsive design. On mob
 # Credits
 
 ## Code 
-<br>
 I was helped with this project by watching various javascript tutorials, which enabled me to build the various functions needed for this game. These were:
 
 - Learn JavaScript by Building 7 Games - Full Course [link](https://www.youtube.com/watch?v=ec8vSKJuZTk&t=5449s)
 - How To Code A Card Game In Plain JavaScript - Spooky Halloween Edition [link](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=309s)
+- Awesome Vanilla JavaScript Memory Card Game Tutorial [Link](https://www.youtube.com/watch?v=-tlb4tv4mC4)
+- Memory Card Game - JavaScript Tutorial [Link](https://www.youtube.com/watch?v=ZniVgo8U7ek)
+- Overlay creation [Link](https://www.w3schools.com/howto/howto_css_overlay.asp)
 
 ## Media
-<br>
 
-## The following images were used in the project:
+The following images were used in the project:
+
+- The player images that were used for the cards were all taken from the photos section of the clubs Facebook page [link](https://www.facebook.com/stokecity/photos/?ref=page_internal)
+- The image of the back of the cards was taken from Sport Playslist [link](http://sportplaylists.com/get-ready-201718-stoke-city-fc-official-playlist)
 
 <br />
 
-
-
-- The player images that were used for the cards were all taken from the photos section of the clubs facebook page [link] (https://www.facebook.com/stokecity/photos/?ref=page_internal)
-- The image of the back of the cards was taken from [link] (http://sportplaylists.com/get-ready-201718-stoke-city-fc-official-playlist)
-
-
 # Acknowledgements
 
+- Bootstrap Library used in project mainly to make site responsive.
+- Images used in readme were screen shot from W3 Validators and Am I Responsive.
+- Stack Overflow for advice and help regarding JEST testing.
+- Prompt font supplied by Google Fonts
+- My Mentor Chris Quinn for continuous helpful feedback.
+- Slack community for helpful advice.
